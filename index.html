@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.container{
+			width: 1000px;
+			height: 800px;
+			background-color: red;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		.col-12{
+			width: 100%;
+		}
+		.bg-success{
+			background-color: green;
+		}
+		.mt-1{
+			margin-top: 10px;
+		}
+		.col-10{
+			width: 80%;
+		}
+		.col-2{
+			width: 20%;
+		}
+		.bg-yellow{
+			background-color: yellow;
+		}
+		.bg-warning{
+			background-color: red;
+		}
+		.bg-dark{
+			background-color: black;
+		}
+		.d-flex{
+			display: flex;
+		}
+		.border{
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body class="bg-warning">
+	<div class="container">
+		<div class="col-12 bg-success d-flex" style="height: 100px;">
+			<div class="col-10 bg-dark border" style="height: 100px;">
+				<h1 style="color: red;">Безумный Азарт</h1>
+			</div>
+			<div class="col-10 bg-dark border" style="height: 100px;"></div>
+			<div class="col-2 bg-dark border" style="height: 100px;">
+				<img  class="star" src="star.png" style="width: 50%; ">
+				<h3 class="a" style="color: red;">10</h3>
+			</div>
+		</div>
+		<div class="col-12 bg-dark mt-1 d-flex"style="height: 700px;">
+			<div class="col-3 bg-dark border" style="height: 700px;">
+				<img src="ba.jpeg">
+					<div>
+						<button class="btn">Добавить в список</button>
+					</div>
+			</div>
+			<div class="col-9 bg-dark border" style="height: 700px;">
+				<div>
+			  <iframe width="760" height="350" src="https://www.youtube.com/embed/R_X84sL0al4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			  	</div>
+				 <div>
+				 	<h4 style="color: red;">Частная академия Хяккао — место, где учится так называемая элита. Престижное учебное заведение для привилегированных особ с необычной программой обучения. Если ты ребёнок богатейших из богатых, спортивные достижения или образованность не играют роли. Только умение читать своего оппонента или же владение искусством заключения сделок помогут здесь выжить. Что же отточит эти навыки лучше, чем строгий учебный план азартных игр? В этой академии победители живут как короли, а проигравшие теряют всё. Но только с появлением Юмэко Джабами, ученики узнают, что значит по-настоящему играть!</h4>
+				 </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		let num1=10
+		let a=document.querySelector(".a")
+		let s= document.querySelector(".star")
+		let b= document.querySelector(".btn")
+		b.onclick=function(){
+			alert('hh')
+		}
+		s.onclick=function(){
+		  num1= num1+1
+		  a.innerHTML=num1
+		 }
+	</script>
+</body>
+</html>
